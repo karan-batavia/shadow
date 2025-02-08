@@ -46,7 +46,7 @@
         </button>
         <div class="navigation-controls--break ui-kit_mobile-only"></div>
         <div class="library-version" id="library-version">
-9.0.0-beta7        </div>
+9.0.0-beta8        </div>
         <div class="navigation-controls">
         <div class="filter-section filter-section_loading" id="filter-section">
                 <button class="platform-tag platform-selector jvm-like" data-active=""
@@ -110,7 +110,7 @@
     <h1 class="cover"><span>Service</span><wbr></wbr><span>File</span><wbr></wbr><span><span>Transformer</span></span></h1>
     <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="index.html">ServiceFileTransformer</a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">patternSet<span class="token operator">: </span><span data-unresolved-link="org.gradle.api.tasks.util/PatternSet///PointingToDeclaration/">PatternSet</span><span class="token operator"> = </span>PatternSet()
     .include(SERVICES_PATTERN)
-    .exclude(GROOVY_EXTENSION_MODULE_DESCRIPTOR_PATTERN)</span></span><span class="token punctuation">)</span> : <a href="../-transformer/index.html">Transformer</a>, <span data-unresolved-link="org.gradle.api.tasks.util/PatternFilterable///PointingToDeclaration/">PatternFilterable</span></div><p class="paragraph">Resources transformer that appends entries in <code class="lang-kotlin">META-INF/services</code> resources into a single resource. For example, if there are several <code class="lang-kotlin">META-INF/services/org.apache.maven.project.ProjectBuilder</code> resources spread across many JARs the individual entries will all be concatenated into a single <code class="lang-kotlin">META-INF/services/org.apache.maven.project.ProjectBuilder</code> resource packaged into the resultant JAR produced by the shading process.</p><p class="paragraph">Modified from <a href="https://github.com/apache/maven-shade-plugin/blob/master/src/main/java/org/apache/maven/plugins/shade/resource/ServicesResourceTransformer.java">org.apache.maven.plugins.shade.resource.ServicesResourceTransformer.java</a>.</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">jvanzyl</p><p class="paragraph">Charlie Knudsen</p><p class="paragraph">John Engelman</p></span></div></div>
+    .exclude(PATH_LEGACY_GROOVY_EXTENSION_MODULE_DESCRIPTOR)</span></span><span class="token punctuation">)</span> : <a href="../-transformer/index.html">Transformer</a>, <span data-unresolved-link="org.gradle.api.tasks.util/PatternFilterable///PointingToDeclaration/">PatternFilterable</span></div><p class="paragraph">Resources transformer that appends entries in <code class="lang-kotlin">META-INF/services</code> resources into a single resource. For example, if there are several <code class="lang-kotlin">META-INF/services/org.apache.maven.project.ProjectBuilder</code> resources spread across many JARs the individual entries will all be concatenated into a single <code class="lang-kotlin">META-INF/services/org.apache.maven.project.ProjectBuilder</code> resource packaged into the resultant JAR produced by the shading process.</p><p class="paragraph">Modified from <a href="https://github.com/apache/maven-shade-plugin/blob/master/src/main/java/org/apache/maven/plugins/shade/resource/ServicesResourceTransformer.java">org.apache.maven.plugins.shade.resource.ServicesResourceTransformer.java</a>.</p><span class="kdoc-tag"><h4 class="">Author</h4><p class="paragraph">jvanzyl</p><p class="paragraph">Charlie Knudsen</p><p class="paragraph">John Engelman</p></span></div></div>
   </div>
   <div class="tabbedcontent">
     <div class="tabs-section" tabs-section="tabs-section"><button class="section-tab" data-active="" data-togglable="CONSTRUCTOR,TYPE,PROPERTY,FUNCTION">Members</button></div>
@@ -129,26 +129,7 @@
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">constructor</span><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">patternSet<span class="token operator">: </span><span data-unresolved-link="org.gradle.api.tasks.util/PatternSet///PointingToDeclaration/">PatternSet</span><span class="token operator"> = </span>PatternSet()
     .include(SERVICES_PATTERN)
-    .exclude(GROOVY_EXTENSION_MODULE_DESCRIPTOR_PATTERN)</span></span><span class="token punctuation">)</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div data-togglable="TYPE">
-        <h2 class="">Types</h2>
-        <div class="table"><a data-name="1170982547%2FClasslikes%2F769193423" anchor-label="ServiceStream" id="1170982547%2FClasslikes%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="-service-stream/index.html"><span>Service</span><wbr></wbr><span><span>Stream</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1170982547%2FClasslikes%2F769193423"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">class </span><a href="-service-stream/index.html">ServiceStream</a> : <a href="https://docs.oracle.com/javase/8/docs/api/java/io/ByteArrayOutputStream.html">ByteArrayOutputStream</a></div></div></div>
+    .exclude(PATH_LEGACY_GROOVY_EXTENSION_MODULE_DESCRIPTOR)</span></span><span class="token punctuation">)</span></div></div></div>
                 </div>
               </div>
             </div>
@@ -168,6 +149,21 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@get:</span><span data-unresolved-link="org.gradle.api.tasks/Internal///PointingToDeclaration/"><span class="token annotation builtin">Internal</span></span></div></div><span class="token keyword">open </span><span class="token keyword">val </span><a href="../-transformer/object-factory.html">objectFactory</a><span class="token operator">: </span><span data-unresolved-link="org.gradle.api.model/ObjectFactory///PointingToDeclaration/">ObjectFactory</span></div><div class="brief "><p class="paragraph">This is used for creating Gradle's lazy properties in the subclass, Shadow's build-in transformers that depend on this have been injected via <span data-unresolved-link="org.gradle.api.model/ObjectFactory/newInstance/#java.lang.Class[TypeParam(bounds=[kotlin.Any])]#kotlin.Array[kotlin.Any]/PointingToDeclaration/">ObjectFactory.newInstance</span>. Custom transformers should implement or inject this property if they need to access it.</p></div></div></div>
+                </div>
+              </div>
+            </div>
+          </div>
+<a data-name="-477586496%2FProperties%2F769193423" anchor-label="path" id="-477586496%2FProperties%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
+          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
+            <div class="main-subrow keyValue ">
+              <div class=""><span class="inline-flex">
+                  <div><a href="path.html"><span><span>path</span></span></a></div>
+<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="-477586496%2FProperties%2F769193423"></span>
+                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
+                  </span></span></div>
+              <div>
+                <div class="title">
+                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><div class="block"><div class="block"><span class="token annotation builtin">@get:</span><span data-unresolved-link="org.gradle.api.tasks/Internal///PointingToDeclaration/"><span class="token annotation builtin">Internal</span></span></div></div><span class="token keyword">open </span><span class="token keyword">var </span><a href="path.html">path</a><span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></div></div></div>
                 </div>
               </div>
             </div>
@@ -322,21 +318,6 @@
               <div>
                 <div class="title">
                   <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">override </span><span class="token keyword">fun </span><a href="index.html#1572932161%2FFunctions%2F769193423"><span class="token function">setIncludes</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">includes<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin.collections/-mutable-iterable/index.html">MutableIterable</a><span class="token operator">&lt;</span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a><span class="token operator">&gt;</span></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.gradle.api.tasks.util/PatternFilterable///PointingToDeclaration/">PatternFilterable</span></div></div></div>
-                </div>
-              </div>
-            </div>
-          </div>
-<a data-name="1514049366%2FFunctions%2F769193423" anchor-label="setPath" id="1514049366%2FFunctions%2F769193423" data-filterable-set=":dokkaHtml/main"></a>
-          <div class="table-row" data-filterable-current=":dokkaHtml/main" data-filterable-set=":dokkaHtml/main">
-            <div class="main-subrow keyValue ">
-              <div class=""><span class="inline-flex">
-                  <div><a href="set-path.html"><span>set</span><wbr></wbr><span><span>Path</span></span></a></div>
-<span class="anchor-wrapper"><span class="anchor-icon" pointing-to="1514049366%2FFunctions%2F769193423"></span>
-                    <div class="copy-popup-wrapper "><span class="copy-popup-icon"></span><span>Link copied to clipboard</span></div>
-                  </span></span></div>
-              <div>
-                <div class="title">
-                  <div class="platform-hinted " data-platform-hinted="data-platform-hinted"><div class="content sourceset-dependent-content" data-active="" data-togglable=":dokkaHtml/main"><div class="symbol monospace"><span class="token keyword">open </span><span class="token keyword">fun </span><a href="set-path.html"><span class="token function">setPath</span></a><span class="token punctuation">(</span><span class="parameters "><span class="parameter ">path<span class="token operator">: </span><a href="https://kotlinlang.org/api/core/kotlin-stdlib/kotlin/-string/index.html">String</a></span></span><span class="token punctuation">)</span><span class="token operator">: </span><span data-unresolved-link="org.gradle.api.tasks.util/PatternFilterable///PointingToDeclaration/">PatternFilterable</span></div></div></div>
                 </div>
               </div>
             </div>
